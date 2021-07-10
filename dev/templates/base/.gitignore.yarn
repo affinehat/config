@@ -1,0 +1,17 @@
+## see: https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+## cache and .pnp.* - necessary for zero installs
+## plugins and releases - fixed yarn release to use
+## patches - `yarn patch-commit` files
+## sdks - contains editor sdks, if ignored follow editor procedure again on new clones
+## unplugged - machine specific build artifacts, if ignored set `enableScripts` to false or zero installs may not work
+## versions - version plugin information
+
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+#!.yarn/sdks
+#!.yarn/unplugged
+!.yarn/versions
+
